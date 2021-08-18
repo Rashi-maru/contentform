@@ -1,13 +1,30 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
 </head>
+
+<style>
+    .trial {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .btclass {
+        margin-left: 50%;
+        margin-right: 45%;
+    }
+</style>
+
+<h1 style="text-align: center;">Content Form</h1>
+<br>
+
 <form>
-    <div class="form-group">
+    <div class="form-group" class="trial">
         <label for="Name"><h3>1. Content form submitted by</h3></label>
         <input id="Name" type="text" class="form-control" />
     </div>
-
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <h3>2. What kind of content is this?</h3>
         <input type="radio" class="non-featured" id="article" name="name" value="article" />
         <label for="non-featured">Article</label><br />
@@ -21,8 +38,8 @@
         <label for="non-featured">Product(Self Service Tool)</label
     ><br />
   </div>
-
-  <div class="form-group">
+ <br>
+  <div class="form-group" class="trial">
     <label for="heading"
       ><h3>
         3. What is it called? (Heading as you want it to appear across the
@@ -32,17 +49,21 @@
     <input id="heading" type="text" class="form-control" />
   </div>
 
-  <div class="form-group">
-    <label for="members"
+ <br>
+
+  <div class="form-group" class="trial">
+    <label for="heading"
       ><h3>
-        4. What should be mentioned as the authors/project members? Please
+       4. What should be mentioned as the authors/project members? Please
         mention RIL usernames/email IDs
       </h3></label
     >
     <input id="members" type="text" class="form-control" />
   </div>
+ <br>
 
-  <div class="form-group">
+
+  <div class="form-group" class="trial">
     <label for="comment"
       ><h3>
         5. Please write a short 30 word abstract/description of the project.
@@ -50,22 +71,21 @@
     >
     <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
   </div>
+   <br>
   <!-- 6. Please upload a high resolution image which you feel represents your project.  Please make sure it is not copyright against use(Marketplace is an internal company portal) -->
 
-  <div class="form-group">
+  <div class="form-group" class="trial">
     <h3>7. Please select the business value your project is related to:</h3>
     <input type="checkbox" id="Revenue" name="Revenue" value="Revenue" />
     <label for="Revenue"> Contribution to Revenue</label><br />
         <input type="checkbox" id="Effectiveness" name="Effectiveness" value="Effectiveness" />
-        <label for="Effectiveness"> Increased Effectiveness or Productivity</label
-    ><br />
-    <input
-      type="checkbox"
-      id="Resilience"
-      name="Resilience"
-      value="Resilience"
-    />
-    <label for="Resilience"> Improved Resilience or Reliability</label><br />
+        <label for="Effectiveness"> Increased Effectiveness or Productivity</label><br />
+
+        <input type="checkbox" id="Resilience" name="Resilience" value="Resilience" />
+        <label for="Resilience"> Improved Resilience or Reliability</label><br />
+
+
+
         <input type="checkbox" id="Cost Reduction" name="Cost Reduction" value="Cost Reduction" />
         <label for="Cost Reduction"> Cost Reduction or Avoidance</label><br />
         <input type="checkbox" id="Improved" name="Improved" value="Improved" />
@@ -78,8 +98,8 @@
         <label for="Not Applicable"> Not Applicable</label><br />
         <br />
     </div>
-
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <h3>8. Please tag the business function your project is related to:</h3>
         <input type="checkbox" id="Marketing" name="Marketing" value="Marketing" />
         <label for="Marketing"> Marketing</label><br />
@@ -94,8 +114,8 @@
         <input type="checkbox" id="Others" name="Others" value="Others" />
         <label for="Others"> Others</label><br /><br />
     </div>
-
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <h3>9. Please tag the business your project is related to:</h3>
         <input type="checkbox" id="Marketing" name="R&M" value="R&M" />
         <label for="R&M"> R&M</label><br />
@@ -129,8 +149,8 @@
         <label for="Others">Others</label><br />
         <br />
     </div>
-
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <h3>10. Please tag the technology that your submission is related to:</h3>
         <input type="checkbox" id="Image" name="Image" value="Image" />
         <label for="Image">Image & Video Analytics</label><br />
@@ -143,38 +163,43 @@
         <input type="checkbox" id="Visualization" name="Visualization" value="Visualization" />
         <label for="Visualization">Visualization</label><br />
         <input type="checkbox" id="Machine" name="Machine" value="Machine" />
-        <label for="Machine">Machine Learning/Deep Learning & Statistics</label
-    ><br />
-    <input type="checkbox" id="Others" name="Others" value="Others" />
-    <label for="Others">Others</label><br />
+        <label for="Machine">Machine Learning/Deep Learning & Statistics</label>
+        <br />
+        <input type="checkbox" id="Others" name="Others" value="Others" />
+        <label for="Others">Others</label><br />
     </div>
     <br />
-    <div class="form-group">
+    <div class="form-group" class="trial">
         <h3>
             11. Why other tags not covered above? Adding more tags helps in searchability. (eg. NLP, sentiment analyzer, EDA, preprocessing, etc.)
         </h3>
         <input id="tags" type="text" class="form-control" />
     </div>
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <label for="comment"><h3>13. Result and Usage</h3></label>
         <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
     </div>
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <label for="comment"><h3>14. Business context</h3></label>
         <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
     </div>
-    <div class="form-group">
+    <br>
+    <div class="form-group" class="trial">
         <label for="comment"><h3>15. Methodology</h3></label>
         <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
     </div>
-
+    <br>
     <!-- qs.  image -->
 
-    <div class="form-group">
+    <div class="form-group" class="trial">
         <label for="comment"><h3>17. Result and Usage</h3></label>
         <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
     </div>
-    <div class="form-group">
+    <br>
+
+    <div class="form-group" class="trial">
         <label for="comment"><h3>18. Business value</h3></label>
         <textarea id="comment" cols="30" rows="10" class="form-control"></textarea>
     </div>
@@ -184,10 +209,10 @@
 
     <br />
 
-    <button class="btn btn-primary">Submit</button>
-
+    <button class="btn btn-primary btclass">Submit</button>
 
 </form>
+<br>
 
 
 <script>
